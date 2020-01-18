@@ -2,21 +2,53 @@
     <main>
         <head>
             <style>
-                img  {height: 100px;width: 300px;}            
-            </style>
-            
-            <img title="header photo" src="resources/images/dw-logo.png" alt="This is the logo" />
-            <h1>Global Dashboard</h1>
+                .flex-container {
+                  display: flex;
+                  align-items: baseline;
+                  flex-wrap: wrap;
+                }
+                
+ 
+                </style>
+            <div class="flex-container">
+                <div>
+                    <img style = "height:100px;width:200px"title="header photo" src="resources/images/dw-logo.png" alt="This is the logo" />
+                </div>
+                <div>
+                 <!-- Fonts don't change while using the two in doc -->
+                    <h1 style = "font-family:'Paytone One', sans-serif">
+                        Global Dashboard
+                    </h1>
+                </div>
+                
+            </div>
     
         </head>
+
+        <section id = 'metric_table'>
+            <table style="width:100%;text-align:center">
+                <tr>
+                  <th>Dingus</th>
+                  <th>Widget</th>
+                  <th>Sales</th>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>$0.00</td>
+                </tr>
+              </table>
+        </section>
+
         <section id = 'metrics'>
             <figure id = 'metric1'>
-
+                <img style = "height:100px;width:200px"title="header photo" src="resources/images/dw-logo.png" alt="This is the logo" />
             </figure>
             <figure id = 'metric2'>
 
             </figure>
             <figure id = 'metric3'>
+
 
             </figure>
 
