@@ -7,7 +7,7 @@ footer {
 }
 
 
-  p, td, h4, summary, label {
+  p, td, h4, summary, label, th{
     font-family: 'Montserrat', sans-serif;  
 }
   h1, h3 {
