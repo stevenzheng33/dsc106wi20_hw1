@@ -1,0 +1,155 @@
+* {
+    margin:10px;
+  } 
+  
+footer {
+    margin:10px;
+}
+
+
+  p, td, h4, summary, label {
+    font-family: 'Montserrat', sans-serif;  
+}
+  h1, h3 {
+    font-family: 'Paytone One', sans-serif;
+  }
+
+  h3 {
+      font-size: large;
+  }
+
+  h2 {
+    font-size: large;
+}
+
+.orderForm {
+    border: none;
+}
+
+
+.clickdown {   
+    font-weight:bold;
+}
+  
+  .chart-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+  .metric{
+      flex: 30%;
+      padding-right: 5%;
+      align-items: center;
+
+  }
+
+  figcaption{
+      caption-side: top;
+      text-align: center;
+      margin-left: 15%;
+      margin-right: 15%;
+  }
+
+  iframe {
+    margin-left: -10%;
+    width:150%;
+    height:120%;
+  }
+
+
+
+
+
+
+.OrderHistory td, th, tr {
+	border: 1px solid black;
+    text-align: center;
+
+}
+
+.OrderHistory {
+	margin-left:15%; 
+    margin-right:15%;
+	width: 70%;
+	border: 1px solid black;
+}
+
+
+
+.metrictable td{
+    height: 50px;
+    vertical-align: bottom;
+    color: blue;
+    font-size: xx-large;
+}
+.metrictable th{
+    border: 0px;
+}
+.green{
+    color: green
+}
+
+
+
+/* .formtoindent {
+    margin-right: 10%;
+} */
+
+.flex-container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.figcaption {
+    text-align: center;
+}
+
+
+.logo {
+   height:70px;
+   width:200px;
+}
+
+.firsttable {
+    width:100%;
+    text-align:center;
+}
+
+.pie {
+    width:100%;
+}
+
+.bar {
+    width:100%;
+}
+
+.iframechart {
+    width:120%;
+    height:110%;
+    border:none;
+}
+.firsttable {
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.metrictable {
+    margin-left: 6%;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    table-layout: fixed ;
+}
+
+.graycolor {
+    background-color:lightgray;
+}
+
+
+
+
+
+
+

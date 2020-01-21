@@ -1,65 +1,196 @@
-<html>
-    <main>
-        <head>
-            <style>
-                .flex-container {
-                  display: flex;
-                  align-items: baseline;
-                  flex-wrap: wrap;
-                }
-                
- 
-                </style>
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat%7CPaytone+One&display=swap" rel="stylesheet" />
+        <title>Dingus and Widget</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    </head>
+    <body>
+        <header>
+
             <div class="flex-container">
                 <div>
-                    <img style = "height:100px;width:200px"title="header photo" src="resources/images/dw-logo.png" alt="This is the logo" />
+                    <img class = "logo" title="header photo" src="resources/images/dw-logo.png" alt="This is the logo" />
                 </div>
                 <div>
-                 <!-- Fonts don't change while using the two in doc -->
-                    <h1 style = "font-family:'Paytone One', sans-serif">
+                    <h1>
                         Global Dashboard
                     </h1>
                 </div>
                 
             </div>
+        </header>
+        <main>
+            <section id = 'metric_table' class = 'metrictable'>
+                <table class = 'firsttable'>
+                    <tr>
+                    <th>Dingus</th>
+                    <th>Widget</th>
+                    <th>Sales</th>
+                    </tr>
+                    <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><span class = 'green'>$</span>0.00</td>
+                    </tr>
+                </table>
+            </section>
+
+            <hr>
+           
+
+            <section id = 'charts'>
+
+                <div class="chart-container">
+                    <div class = 'metric'>
+                        <figure>
+                            <figcaption><h2>Total Sales Breakdown</h2></figcaption>
+                            <img class = 'pie' title="pie chart" src="resources/images/pie.png" alt="This is the pie chart" />
+                        </figure>
+                       
+                    </div>
     
-        </head>
+                    <div class = 'metric'>
+                        <figure>
+                            <figcaption><h2>Sales Per Day</h2></figcaption>
+                            <img class = 'bar' title="bar chart" src="resources/images/bar.png" alt="This is the bar chart" />
+                        </figure>
+                        
+                    </div>
+    
+                    <div class = 'metric'>
+                     
+                        <iframe class = 'iframechart'  src="https://app.zingsoft.com/demos/view/DK4RG3XN"></iframe>
+                        <figure>
+                            <figcaption><a href="https://app.zingsoft.com/demos/view/DK4RG3XN">Source</a></figcaption>
 
-        <section id = 'metric_table'>
-            <table style="width:100%;text-align:center">
-                <tr>
-                  <th>Dingus</th>
-                  <th>Widget</th>
-                  <th>Sales</th>
-                </tr>
-                <tr>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>$0.00</td>
-                </tr>
-              </table>
-        </section>
+                        </figure>
+                    </div>
+                </div>  
+                <br> 
+                <br>
+                <br>
+                <br>
+            </section>
+            
+            <hr>
 
-        <section id = 'metrics'>
-            <figure id = 'metric1'>
-                <img style = "height:100px;width:200px"title="header photo" src="resources/images/dw-logo.png" alt="This is the logo" />
-            </figure>
-            <figure id = 'metric2'>
+            <section class = "Ordertable">
+                <table class = "OrderHistory">
+                    <caption><h3>Order History</h3></caption>
+                    <colgroup>
+                        <col class = 'graycolor' span= "1">
+                        <col span = "4">
+                    </colgroup>
+                    <thead class = "thread">
+                    <tr>
+                        <th class = "firstrow" rowspan="2">ID#</th>
+                        <th class = "firstrow" rowspan="2"> Date </th>
+                        <th class = "firstrow" colspan="2"> Quantity </th>
+                        <th class = "firstrow" rowspan="2"> Total </th>
+                    </tr>
+                    <tr>
+                        <th class = "firstrow"> Dingus </th>
+                        <th class = "firstrow"> Widget </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td> 1221 </td>
+                        <td> 12/12/19 </td>
+                        <td> 4 </td>
+                        <td> 10 </td>
+                        <td> $12.33 </td>
+                    </tr>
+                    <tr>
+                        <td> 1222 </td>
+                        <td> 12/21/19 </td>
+                        <td> 1 </td>
+                        <td> 2 </td>
+                        <td> $27.34 </td>
+                    </tr>
+                    <tr>
+                        <td> 1223 </td>
+                        <td> 1/5/20 </td>
+                        <td> 14 </td>
+                        <td> 19 </td>
+                        <td> $345.33 </td>
+                    </tr></tbody>
+                    <tfoot>
+                        <tr class>
+                            <td colspan="5">&#169; 2020 D&W Worldwide.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
 
-            </figure>
-            <figure id = 'metric3'>
+            
+
+            <dialog>
+                <br>
+                <p>This section will work only after HW2!</p>
+                <br>
+            </dialog>
+          
+ 
+            <script type="text/javascript" src="resources/scripts/hw1.js"> </script>
+            
+            <fieldset class = "orderForm">
+                <details>
+                    
+                    <summary class = 'clickdown' onclick = "showDialog();">Order Form</summary>
+                    <hr>
+                    
+                    <div class = 'formtoindent'>
+                    <form>
+                    <p>Dingus<input value=0>@<input value=14.25>= $<input value=0.00></p>
+                    <p>Widget<input value=0>@<input value=9.99>= $<input value=0.00></p>
+                    <p>Total $<input value=0.00></p>
+                    <label>Shipping<input list = shiplist></label>
+                    <datalist id="shiplist">
+                        <option value="Plane"></option>
+                        <option value="Car"></option>
+                        <option value="Ship"></option>
+                    </datalist>
+                    
+                    <p>Payment</p>
+                    <select size = "4">
+                        <option>Visa</option>
+                        <option>MasterCard</option>
+                        <option>Paypal</option>
+                    </select>
+                    </form>
+                    <p>Comment<textarea></textarea></p>
+                    <button>Cancel</button><button>Order</button>
+                    </div>
+                </details>
+               
+
+            </fieldset>
 
 
-            </figure>
-
-        </section>
-        <section id = 'charts'>
-
-        </section>
-
-
-    </main>
-
+        </main>
+    
+    <footer>
+        <br>
+        <p>Disclaimer: This page is provided<em>as is</em></p>
+        <br>
+        <p>Notes</p>
+        <br>
+		<ul>
+			<li><p>Your order will leave warehouse in 3-5 days</p></li>
+			<li><p>If you have any question please contact us at 123456789</p></li>
+			<li><p>D&W is a proud supporter of the the <i>Stuart Collection</i></p></li>
+        </ul>
+        <br>
+		<address><p>9500 Gilman Dr, La Jolla, CA 92093</p></address>
+    </footer>
+</body>
+      
 
 
 
