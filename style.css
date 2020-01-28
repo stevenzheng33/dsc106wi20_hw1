@@ -7,18 +7,18 @@ footer {
 }
 
 
-  p, td, h4, summary, label, th, a{
+p, td, h4, summary, label, th, a{
     font-family: 'Montserrat', sans-serif;  
 }
-  h1, h3 {
-    font-family: 'Paytone One', sans-serif;
-  }
+h1, h3 {
+font-family: 'Paytone One', sans-serif;
+}
 
-  h3 {
-      font-size: initial;
-  }
+h3 {
+    font-size: initial;
+}
 
-  h2 {
+h2 {
     font-size: large;
 }
 
@@ -52,11 +52,11 @@ footer {
       margin-right: 15%;
   }
 
-  iframe {
-    margin-left: -10%;
-    width:150%;
-    height:120%;
-  }
+iframe {
+margin-left: -10%;
+width:150%;
+height:120%;
+}
 
 
 
@@ -91,11 +91,6 @@ footer {
     color: green
 }
 
-
-
-/* .formtoindent {
-    margin-right: 10%;
-} */
 
 .flex-container {
     display: flex;
